@@ -1,0 +1,284 @@
+@font-face {
+  font-family: kufiFontBold;
+  src: url(../Droid\ Arabic\ Kufi\ Bold.ttf);
+}
+@font-face {
+  font-family: kufiFontRegular;
+  src: url(/Droid\ Arabic\ Kufi\ Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+  font-family: var(--kufiFontBold);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #582c82;
+  --section-color: #ff7043;
+  --kufiFontBold: "kufiFontBold";
+  --kufiFontRegular: "kufiFontRegular";
+}
+
+.landing-page {
+  background-image: url(../images/Wave-10s-1319px-18.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing-page h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.landing-page a {
+  color: white;
+  margin-left: 15px;
+}
+.sticky {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.sticky a {
+  color: black;
+  transition: 0.3s;
+}
+.sticky a h1 {
+  color: black;
+}
+.sticky a:hover {
+  color: var(--section-color) !important;
+}
+main {
+  height: 100vh;
+}
+main a:hover {
+  color: white;
+  border-color: var(--main-color) !important;
+}
+main p {
+  font-family: var(--kufiFontRegular);
+}
+main p:not(:first-child) {
+  color: #444;
+}
+main p:not(:first-child)::before {
+  content: url(../images/marker.png);
+}
+
+.who {
+  background-color: var(--main-color);
+}
+.line {
+  width: 100px;
+  height: 4px;
+  background-color: var(--section-color);
+}
+
+.btn-srv {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.btn-srv:hover {
+  background-color: var(--main-color);
+}
+.item-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+.image-box img {
+  width: 100px;
+  height: 100px;
+}
+
+.our-services {
+  background-image: url(../images/اعمالنا/patterns.svg);
+}
+.our-services img {
+  width: 100%;
+}
+.item {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgb(187, 179, 179);
+  background-color: #fffcfc;
+}
+
+.item-text h5 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.item-text p {
+  color: #777;
+}
+
+.contact-us {
+  background-image: url(../images/اعمالنا/patterns.svg);
+}
+
+.item {
+  margin-bottom: 10px;
+}
+.card {
+  background-image: url(../images/اعمالنا/patterns.svg);
+}
+.card1,
+.card2,
+.card3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  flex-basis: 33%;
+}
+.card1 {
+  background-color: #3c99d7;
+}
+.card2 {
+  background-color: #222242;
+}
+.card3 {
+  background-color: #582c82;
+}
+.heading {
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+.heading p {
+  color: var(--section-color);
+  font-weight: bold;
+}
+.heading h4 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: var(--section-color);
+}
+.our-works {
+  background-image: url(../images/اعمالنا/patterns.svg);
+}
+.works {
+  margin-bottom: 25px;
+}
+.work {
+  position: relative;
+}
+.work::after {
+  content: "";
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.work:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-work {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  font-weight: bold;
+  width: 11%;
+}
+
+.btn-work:hover {
+  background-color: var(--section-color);
+  border-color: var(--section-color);
+}
+
+.details {
+  background-image: linear-gradient(
+    to right,
+    #084163,
+    #28478a,
+    #34658d,
+    #3e4b74
+  );
+}
+
+.heading-txt {
+  height: 50px;
+  margin-bottom: 25px;
+}
+.details .heading-txt h4 {
+  color: white;
+  font-weight: bold;
+}
+
+.line-details {
+  width: 100%;
+  height: 1px;
+  background-color: #777;
+  display: block;
+}
+
+.details a {
+  transition: 0.2s;
+}
+.details a:hover {
+  color: var(--section-color) !important;
+}
+
+.details i {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.details i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.facebook {
+  background-color: #1877f2;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+.linkedin {
+  background-color: #0a66c2;
+}
+.insta {
+  background-color: #e1306c;
+}
+.pint {
+  background-color: #e60023;
+}
+.behance {
+  background-color: #1769ff;
+}
+
+.details img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
