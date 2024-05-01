@@ -39,10 +39,16 @@ body {
 .landing-page a {
   color: white;
   margin-left: 15px;
+  font-size: 13px;
+}
+header i {
+  font-size: 10px;
 }
 .sticky {
   background-color: white;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
 }
@@ -56,21 +62,44 @@ body {
 .sticky a:hover {
   color: var(--section-color) !important;
 }
-main {
+
+.main {
   height: 100vh;
 }
-main a:hover {
+
+.main a:hover {
   color: white;
   border-color: var(--main-color) !important;
 }
-main p {
+.main p {
   font-family: var(--kufiFontRegular);
 }
-main p:not(:first-child) {
+.main p:not(:first-child) {
   color: #444;
 }
-main p:not(:first-child)::before {
+.main p:not(:first-child)::before {
   content: url(../images/marker.png);
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+  }
+  .landing-page h1 {
+    color: #000;
+    font-size: 30px;
+  }
+  .main1 {
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+    gap: 100px;
+  }
+  .main p:not(:first-child) {
+    text-shadow: 2px 2px #fff;
+  }
+  .main h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .who {
