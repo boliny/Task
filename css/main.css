@@ -31,18 +31,40 @@ body {
   height: 100vh;
 }
 
-.landing-page h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
+.landing-page #logo {
+  width: 200px;
 }
 .landing-page a {
   color: white;
   margin-left: 15px;
   font-size: 13px;
 }
+.landing-page a:hover {
+  color: white;
+}
 header i {
   font-size: 10px;
+}
+
+.slid {
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  width: 13%;
+  text-align: center;
+  display: none;
+}
+.slid a {
+  color: #000 !important;
+}
+.slid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--section-color);
 }
 .sticky {
   background-color: white;
@@ -56,8 +78,8 @@ header i {
   color: black;
   transition: 0.3s;
 }
-.sticky a h1 {
-  color: black;
+.sticky li.active a {
+  color: var(--section-color);
 }
 .sticky a:hover {
   color: var(--section-color) !important;
@@ -76,6 +98,7 @@ header i {
 }
 .main p:not(:first-child) {
   color: #444;
+  text-shadow: 1px 1px #fff;
 }
 .main p:not(:first-child)::before {
   content: url(../images/marker.png);
@@ -84,10 +107,6 @@ header i {
 @media (max-width: 768px) {
   header {
     background-color: #fff;
-  }
-  .landing-page h1 {
-    color: #000;
-    font-size: 30px;
   }
   .main1 {
     flex-direction: column-reverse;
@@ -101,7 +120,7 @@ header i {
     font-size: 2.5rem;
   }
 }
-
+/********************************/
 .who {
   background-color: var(--main-color);
 }
