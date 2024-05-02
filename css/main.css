@@ -104,22 +104,6 @@ header i {
   content: url(../images/marker.png);
 }
 
-@media (max-width: 768px) {
-  header {
-    background-color: #fff;
-  }
-  .main1 {
-    flex-direction: column-reverse;
-    margin-bottom: 100px;
-    gap: 100px;
-  }
-  .main p:not(:first-child) {
-    text-shadow: 2px 2px #fff;
-  }
-  .main h2 {
-    font-size: 2.5rem;
-  }
-}
 /********************************/
 .who {
   background-color: var(--main-color);
@@ -182,16 +166,23 @@ header i {
   font-family: var(--kufiFontRegular);
   font-weight: lighter;
 }
-
-.contact-us {
-  background-image: url(../images/اعمالنا/patterns.svg);
-}
-
 .item {
   margin-bottom: 10px;
 }
+/***************************************************************/
+.contact-us {
+  background-image: url(../images/patterns.svg);
+}
+.contact-us p {
+  color: var(--section-color);
+}
+.contact-us h4 {
+  font-size: 40px;
+}
+
+/**************************************************************/
 .card {
-  background-image: url(../images/اعمالنا/patterns.svg);
+  background-image: url(../images/patterns.svg);
 }
 .card1,
 .card2,
@@ -210,15 +201,10 @@ header i {
 .card3 {
   background-color: #582c82;
 }
+/***********************************************************************/
 .heading {
   position: relative;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-  }
 }
 
 .heading p {
@@ -276,7 +262,7 @@ header i {
   background-color: var(--section-color);
   border-color: var(--section-color);
 }
-
+/*************************************************************************/
 .details {
   background-image: linear-gradient(
     to right,
@@ -293,9 +279,13 @@ header i {
 }
 .details .heading-txt h4 {
   color: white;
-  font-weight: bold;
+  font-size: 20px;
 }
-
+.details li {
+  font-family: var(--kufiFontRegular);
+  margin-top: 5px;
+  font-size: 14px;
+}
 .line-details {
   width: 100%;
   height: 1px;
@@ -314,7 +304,6 @@ header i {
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  margin-left: 10px;
 }
 .details i:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -345,7 +334,7 @@ header i {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-
+/*************************************************************************/
 .space {
   transform: rotate(180deg);
   position: relative;
@@ -355,4 +344,30 @@ header i {
 }
 .space2 {
   z-index: -1;
+}
+.spacing {
+  background-image: url(../images/patterns.svg);
+  height: 50px;
+  width: 100%;
+  display: block;
+}
+/*********************************************************/
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+  }
+  .main1 {
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+    gap: 100px;
+  }
+  .main p:not(:first-child) {
+    text-shadow: 2px 2px #fff;
+  }
+  .main h2 {
+    font-size: 2.5rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
 }
