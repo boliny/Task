@@ -367,7 +367,24 @@ header i {
   .main h2 {
     font-size: 2.5rem;
   }
+  .who-are {
+    flex-direction: column-reverse;
+  }
+  .who img {
+    width: 100% !important;
+  }
   .cards {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100% !important;
+  }
+  .contact-body {
+    flex-direction: column-reverse;
+  }
+  .contact-body a {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .our-works a {
+    width: 35%;
   }
 }
