@@ -125,9 +125,27 @@ header i {
   background-color: var(--main-color);
 }
 .line {
-  width: 100px;
-  height: 4px;
+  width: 10%;
+  height: 2px;
   background-color: var(--section-color);
+  display: inline-block;
+}
+
+.heading-text p {
+  color: var(--section-color);
+}
+
+.heading-text p:not(:first-child) {
+  color: white;
+  font-family: var(--kufiFontRegular);
+  font-weight: lighter;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.footer-text span {
+  color: var(--section-color);
+  font-size: 80px;
 }
 
 .btn-srv {
@@ -147,7 +165,7 @@ header i {
 }
 
 .our-services {
-  background-image: url(../images/اعمالنا/patterns.svg);
+  background-image: url(../images/patterns.svg);
 }
 .our-services img {
   width: 100%;
@@ -156,16 +174,13 @@ header i {
   border-style: dashed;
   border-width: 1px;
   border-color: rgb(187, 179, 179);
-  background-color: #fffcfc;
-}
-
-.item-text h5 {
-  font-size: 30px;
-  font-weight: 900;
+  background-color: #fff;
 }
 
 .item-text p {
-  color: #777;
+  color: #999;
+  font-family: var(--kufiFontRegular);
+  font-weight: lighter;
 }
 
 .contact-us {
@@ -329,4 +344,15 @@ header i {
   height: 50px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.space {
+  transform: rotate(180deg);
+  position: relative;
+  top: 1px;
+  z-index: -1;
+  background-color: #f1f2f3;
+}
+.space2 {
+  z-index: -1;
 }
