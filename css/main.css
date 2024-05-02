@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: kufiFontRegular;
-  src: url(/Droid\ Arabic\ Kufi\ Regular.ttf);
+  src: url(../Droid\ Arabic\ Kufi\ Regular.ttf);
 }
 * {
   margin: 0;
