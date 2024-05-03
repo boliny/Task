@@ -74,6 +74,7 @@ header i {
 .slid a {
   color: #000 !important;
 }
+
 .slid::before {
   content: "";
   position: absolute;
@@ -101,7 +102,7 @@ header i {
 }
 
 .main {
-  height: calc(100vh - 77px);
+  height: 100vh;
 }
 
 .main a:hover {

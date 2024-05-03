@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#logo').attr('src', "images/logoW.png");
     $(document).scroll(function () {
         let scroll = $(this).scrollTop();
         let topDist = $(".container").position();
@@ -11,9 +12,4 @@ $(document).ready(function() {
             $('#logo').attr('src', "images/logoW.png");
         }
     });
-});
 
-
-$("#flip").click(function () {
-    $("#panel").slideToggle(3000);
-})
