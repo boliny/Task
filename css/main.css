@@ -122,8 +122,6 @@ header i {
 /********************************/
 .who {
   background-color: var(--main-color);
-  height: 500px;
-  z-index: 99999999999;
 }
 .line {
   width: 10%;
@@ -378,11 +376,9 @@ header i {
   }
   .main1 {
     flex-direction: column-reverse;
-    margin-bottom: 100px;
     gap: 100px;
   }
-  .main {
-  }
+
   .main p:not(:first-child) {
     text-shadow: 2px 2px #fff;
   }
@@ -395,6 +391,7 @@ header i {
   .who img {
     width: 100% !important;
   }
+
   .cards {
     flex-direction: column-reverse;
     width: 100% !important;
