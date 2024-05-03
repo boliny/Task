@@ -23,6 +23,10 @@ body {
   --kufiFontRegular: "kufiFontRegular";
 }
 
+a:focus {
+  color: white !important;
+}
+
 .landing-page {
   position: fixed;
   width: 100%;
@@ -64,18 +68,39 @@ header i {
   z-index: -1;
 }
 
-.slid {
+.slid,
+.slid2 {
   background-color: #fff;
+}
+
+.slid {
   position: absolute;
   left: 50%;
   width: 13%;
-  text-align: center;
 }
-.slid a {
+.slid2 {
+  position: absolute;
+  left: 30%;
+  width: 13%;
+}
+.slid li,
+.slid2 li {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.slid a,
+.slid2 a {
   color: #000 !important;
+  font-size: 12px;
+  transition: 0.3s;
 }
 
-.slid::before {
+.slid a:hover,
+.slid2 a:hover {
+  color: var(--section-color) !important;
+}
+.slid::before,
+.slid2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,7 +125,55 @@ header i {
 .sticky a:hover {
   color: var(--section-color) !important;
 }
+/******************************************************/
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100vh;
+  background: #fff;
+  z-index: 11111111;
+}
 
+.menu-mobile .icons2 i {
+  color: white;
+  cursor: pointer;
+  font-size: 8px;
+}
+.menu-mobile li.active {
+  color: var(--section-color);
+}
+.menu-mobile a {
+  transition: 0.3s;
+  font-size: 14px;
+}
+.menu-mobile a:hover {
+  color: var(--section-color);
+}
+
+.close {
+  font-size: 15px;
+  position: absolute;
+  top: 5%;
+  left: 110%;
+  border-radius: 50%;
+  padding: 10px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5555555;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+/********************************************************/
 .main {
   height: 100vh;
 }
@@ -371,6 +444,17 @@ header i {
 .menu-mini {
   display: none;
 }
+
+.menu-mini .bars {
+  font-size: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-mini img {
+  margin-right: 150px;
+}
+
 @media (max-width: 768px) {
   header {
     background-color: #fff;
