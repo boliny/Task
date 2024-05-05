@@ -19,22 +19,22 @@ $(document).ready(function() {
 
 
 
-    $("#flip").mouseenter(function(){
-        $(".slid").slideDown(400);
-    })
+    // $("#flip").mouseenter(function(){
+    //     $(".slid").slideDown(400);
+    // })
 
-    $("#flip").mouseleave(function(){
-        $(".slid").slideUp(400);
-    })
+    // $("#flip").mouseleave(function(){
+    //     $(".slid").slideUp(400);
+    // })
 
 
-    $("#flip2").mouseenter(function(){
-        $(".slid2").slideDown(400);
-    })
+    // $("#flip2").mouseenter(function(){
+    //     $(".slid2").slideDown(400);
+    // })
 
-    $(".slid2").mouseleave(function(){
-        $(".slid2").slideUp(400);
-    })
+    // $(".slid2").mouseleave(function(){
+    //     $(".slid2").slideUp(400);
+    // })
 
 
 $(".bars").click(function(){

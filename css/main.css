@@ -501,3 +501,106 @@ header i {
     position: fixed;
   }
 }
+
+/*****************************************************************************/
+/*********************************about us***********************************/
+
+.we {
+  height: 40vh;
+  position: relative;
+}
+
+.we h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wave-about {
+  position: absolute;
+  background-image: url(../images/Wave-10s-1319px-18.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 700px;
+}
+.msg1,
+.msg2 {
+  background-color: #ececec;
+  margin-top: 50px;
+  position: relative;
+  width: 60%;
+}
+
+.msg1 P,
+.msg2 P {
+  font-family: var(--kufiFontRegular);
+  color: #777;
+}
+
+.msg1 img,
+.msg2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.msg2 {
+  margin-right: auto;
+}
+
+.msg1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00d084;
+}
+.msg2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0693e3;
+}
+/**********************************************************************/
+
+.who-about .heading-text p {
+  color: var(--section-color);
+}
+
+.who-about .heading-text p:not(:first-child) {
+  color: rgb(0, 0, 0);
+  font-family: var(--kufiFontRegular);
+  font-weight: lighter;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.who-about .footer-text span {
+  color: var(--section-color);
+  font-size: 70px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .msg1,
+  .msg2 {
+    width: 100%;
+    height: 100%;
+  }
+}
